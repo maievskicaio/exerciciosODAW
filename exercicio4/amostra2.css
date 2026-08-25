@@ -1,0 +1,139 @@
+h1 {
+    font-family: Arial;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #1a8017;
+    text-align: center;
+    padding: 4pt;
+    border-style: solid;
+    border-top: inset;
+    border-bottom: inset;
+    position: relative;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: x-large;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #1a8017;
+    text-align: center;
+    padding: 3pt;
+    border-top: inset;
+    border-bottom: inset;
+    position: relative;
+}
+
+h3 {
+    font-family: Arial;
+    font-size: large;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #1a8017;
+    text-align: center;
+    border-top: inset;
+    border-bottom: inset;
+    position: relative;
+}
+
+a {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+}
+
+a:LINK {
+    font-family: Arial;
+    font-weight: bold;
+    color: #0000FF;
+    text-decoration: underline;
+    position: relative;
+}
+
+a:VISITED {
+    font-family: Arial;
+    font-weight: bold;
+    color: #800080;
+    text-decoration: underline;
+    position: relative;
+}
+
+b {
+    font-family: Arial;
+    font-weight: bold;
+    color: #800000;
+    position: relative;
+}
+
+i {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+}
+
+li {
+    font-family: Arial;
+    font-size: medium;
+    color: #000080;
+    position: relative;
+}
+
+p {
+    font-family: Arial;
+    font-size: 12pt;
+    color: #000080;
+    position: relative;
+}
+
+td {
+    font-family: sans-serif;
+    font-size: medium;
+    background: #99CCCC;
+}
+
+th {
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #FF0000;
+    background: #FFFF00;
+    text-align: center;
+    position: relative;
+}
+
+pre {
+    font-family: monospace;
+    font-size: medium;
+    background: #CCFFFF;
+    position: relative;
+    left: 1cm;
+}
+
+.first {
+    border-width: thin;
+    border-top: ridge;
+    border-left: ridge;
+    position: relative;
+}
+
+.last {
+    border-width: thin;
+    border-bottom: ridge;
+    border-right: ridge;
+}
+
+.highlight {
+    background: #FFFF00;
+}
+
+.ufo {
+    font-family: monospace;
+    font-size: large;
+    color: #00FF00;
+    background: #000000;
+}
+
