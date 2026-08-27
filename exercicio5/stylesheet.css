@@ -1,0 +1,21 @@
+body {
+    background-color:#F4F1EA;
+}
+
+header {
+    display: flex;
+}
+
+p{
+    text-align: justify;
+    color:#5A5A5C;
+}
+
+.video {
+    display: flex; 
+    align-items:center;
+}
+
+a {
+    color: #E6A100;
+}

@@ -1,0 +1,69 @@
+<!-- 
+  Texto Principal: #1C1C1E (Preto suave)
+  Texto Secundário / Legendas: #5A5A5C (Cinza grafite)
+  Botões e Destaques principais: #E6A100 (Amarelo ouro)
+  Bordas e Divisores: #E5E5EA (Cinza bem claro)
+-->
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cerveja Maluca - OPA Bier</title>
+    </head>
+    <body style="background-color:#F4F1EA">
+        <h1 style="text-align: center; color:#1C1C1E">Site da cerveja maluca</h1>
+        
+        <div>
+            <hr>
+            <h2 style="color:#1C1C1E">Formulário de Interesse</h2>
+
+            <form action="./index.html" method="GET">
+
+                <label for="nome" style="color:#1C1C1E">Nome:</label>
+                <input type="text" name="nome" required><br>
+
+                <label for="email" style="color:#1C1C1E">Email:</label>
+                <input type="email" name="email" required><br>
+
+                <label for="interesse" style="color:#1C1C1E" multiple>Interesse:</label><br>
+                <select type="checkbox" name="interesse" required multiple>
+                    <option value="comprar">Comprar e BEBER Cerveja</option>
+                    <option value="informacoes">Informações super úteis</option>
+                    <option value="outro">Outros</option>
+                </select><br>
+
+                <label for="cervejasPreferidas" style="color:#1C1C1E">Cervejas Preferidas:</label><br>
+                <select name="cervejasPreferidas" required multiple>
+                    <option value="OPA">OPA Bier</option>
+                    <option value="Heineken">Heineken</option>
+                    <option value="Budweiser">Budweiser</option>
+                    <option value="Amstel">Amstel</option>
+                    <option value="Outra">Outra</option>
+                </select><br>
+
+                <input type="checkbox" name="receberInformacoes" required>
+                <label for="receberInformacoes" style="color:#1C1C1E">Desejo receber MUITAS informações sobre cervejas no meu email!</label><br>
+
+                <input type="submit" value="Enviar" style="background-color:#E6A100; color:white; border:none; padding:10px 20px; cursor:pointer;">
+                <input type="reset" value="Limpar" style="background-color:#5A5A5C; color:white; border:none; padding:10px 20px; cursor:pointer;">
+            
+            </form>
+
+        </div>
+        
+        <div>
+            <hr>
+            <a name="home" style="text-align: justify; color:#1C1C1E">Voltar para o menu:</a>
+            <a href="./index.html" style="color:#E6A100">Clique aqui!</a>
+        </div>
+        
+        <div>
+            <hr>
+            <a name="criadores" style="text-align: justify; color:#1C1C1E">Criadores:</a>
+            <a href="https://www.instagram.com/vskcaio" stylaio" style="color:#E6A100">Caio</a>
+            <span> e </span>
+            <a href="https://www.instagram.com/tiago._moura" style="color:#E6A100">Tiago</a>
+        </div>
+    </body>
+</html>
