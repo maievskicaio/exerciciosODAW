@@ -10,6 +10,7 @@
     <head>
         <meta charset="utf-8">
         <title>Cerveja Maluca - OPA Bier</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body style="background-color:#F4F1EA">
         <h1 style="text-align: center; color:#1C1C1E">Site da cerveja maluca</h1>
@@ -21,10 +22,10 @@
             <form action="./index.html" method="GET">
 
                 <label for="nome" style="color:#1C1C1E">Nome:</label>
-                <input type="text" name="nome" required><br>
+                <input type="text" name="nome" placeholder="Digite seu nome" required><br>
 
                 <label for="email" style="color:#1C1C1E">Email:</label>
-                <input type="email" name="email" required><br>
+                <input type="email" name="email" placeholder="Digite seu email" required><br>
 
                 <label for="interesse" style="color:#1C1C1E" multiple>Interesse:</label><br>
                 <select type="checkbox" name="interesse" required multiple>
@@ -45,8 +46,8 @@
                 <input type="checkbox" name="receberInformacoes" required>
                 <label for="receberInformacoes" style="color:#1C1C1E">Desejo receber MUITAS informações sobre cervejas no meu email!</label><br>
 
-                <input type="submit" value="Enviar" style="background-color:#E6A100; color:white; border:none; padding:10px 20px; cursor:pointer;">
-                <input type="reset" value="Limpar" style="background-color:#5A5A5C; color:white; border:none; padding:10px 20px; cursor:pointer;">
+                <input type="submit" value="Enviar" class="botao_enviar">
+                <input type="reset" value="Limpar" class="botao">
             
             </form>
 
