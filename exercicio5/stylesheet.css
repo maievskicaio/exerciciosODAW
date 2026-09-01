@@ -1,21 +1,70 @@
+/*
+Texto Principal: #1C1C1E (Preto suave)
+Texto Secundário / Legendas: #5A5A5C (Cinza grafite)
+Botões e Destaques principais: #E6A100 (Amarelo ouro)
+Bordas e Divisores: #E5E5EA (Cinza bem claro)
+*/
+
+
 body {
-    background-color:#F4F1EA;
+background-color:#F4F1EA;
 }
 
 header {
-    display: flex;
+display: flex;
+}
+
+h1 {
+text-align: center;
+}
+
+h2 {
+text-align: center;
 }
 
 p{
-    text-align: justify;
-    color:#5A5A5C;
+text-align: justify;
+}
+
+th {
+background-color: #E6A100;
+text-align: center;
+}
+
+td {
+text-align: justify;
 }
 
 .video {
-    display: flex; 
-    align-items:center;
+display: flex;
+align-items:center;
+}
+
+.texto_principal {
+color:#1C1C1E;
+}
+
+.texto_secundario {
+color:#5A5A5C;
+}
+
+
+input.botao_enviar {
+background-color: #E6A100;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+input.botao {
+background-color: #5A5A5C;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
 }
 
 a {
-    color: #E6A100;
+color: #E6A100;
 }
