@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteador de Números</title>
+    <script>
+        function sortearNumero() {
+            var num1 = parseInt(document.getElementById("minimo").value);
+            var num2 = parseInt(document.getElementById("maximo").value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Por favor, preencha os dois campos com números.");
+                return;
+            }
+
+            var min = Math.min(num1, num2);
+            var max = Math.max(num1, num2);
+
+            var sorteado = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            document.getElementById("resultado").innerHTML = "Número sorteado: <strong>" + sorteado + "</strong>";
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Sorteador de Números</h2>
+
+    <p>
+        Digite o primeiro número:<br>
+        <input type="number" id="minimo">
+    </p>
+
+    <p>
+        Digite o segundo número:<br>
+        <input type="number" id="maximo">
+    </p>
+
+    <p>
+        <button onclick="sortearNumero()">Sortear</button>
+    </p>
+
+    <h3 id="resultado"></h3>
+
+</body>
+</html>
