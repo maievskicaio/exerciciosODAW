@@ -1,0 +1,50 @@
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 1</title>
+</head>
+
+<body>
+
+    <script>
+        const upper = document.getElementById('upper');
+        const lower = document.getElementById('lower');
+        const aplicar = document.getElementById('aplicar');
+        const campos = document.querySelectorAll('.campo');
+
+        upper.addEventListener('change', () => { if (upper.checked) lower.checked = false; });
+        lower.addEventListener('change', () => { if (lower.checked) upper.checked = false; });
+
+        aplicar.addEventListener('click', () => {
+            if (upper.checked) {
+                campos.forEach(i => { i.value = i.value.toUpperCase(); i.style.textTransform = 'uppercase' });
+            } else if (lower.checked) {
+                campos.forEach(i => { i.value = i.value.toLowerCase(); i.style.textTransform = 'lowercase' });
+            } else {
+                campos.forEach(i => { i.style.textTransform = 'none' });
+            }
+        });
+    </script>
+
+    <form id="form">
+        <label>Campo 1
+            <input type="text" name="campo1" class="campo" />
+        </label>
+        <label>Campo 2
+            <input type="text" name="campo2" class="campo" />
+        </label>
+        <label>Campo 3
+            <input type="text" name="campo3" class="campo" />
+        </label>
+
+        <div class="controls">
+            <label><input type="checkbox" id="upper"> Converter para MAIÚSCULAS</label>
+            <label><input type="checkbox" id="lower"> Converter para minúsculas</label>
+        </div>
+
+        <button type="button" id="aplicar">Aplicar</button>
+    </form>
+
+
+</body>
+
+</html>

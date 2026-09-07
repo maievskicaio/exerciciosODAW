@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <title>Exercício 3</title>
+</head>
+
+<body>
+  <script>
+    const nome = prompt('Digite seu nome:');
+    const now = new Date();
+    const h = now.getHours();
+
+    let saudacao;
+    if (h >= 6 && h < 12) saudacao = 'Bom dia';
+    else if (h >= 12 && h < 18) saudacao = 'Boa tarde';
+    else saudacao = 'Boa noite';
+
+    const dias = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
+    const diaSemana = dias[now.getDay()];
+
+    const dd = String(now.getDate()).padStart(2, '0');
+    const mm = String(now.getMonth() + 1).padStart(2, '0');
+    const yyyy = now.getFullYear();
+
+    const mensagem = `${saudacao}, ${nome}, hoje é ${diaSemana}, ${dd}/${mm}/${yyyy}.`;
+    document.write(mensagem);
+  </script>
+</body>
+
+</html>

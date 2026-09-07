@@ -1,37 +1,39 @@
 <html>
-    <body>
-        <script> 
-        function TestaVal() { 
-            if (document.TesteSub.Campo1.value == "" || document.TesteSub.Campo2.value == "" || document.TesteSub.Campo3.value == "" || document.TesteSub.Campo4.value == "") { 
-                alert("Erro: Um Campo não foi preenchido."); 
-                return false; 
+
+<body>
+    <script>
+        function TestaVal() {
+            if (document.TesteSub.Campo1.value == "" || document.TesteSub.Campo2.value == "" || document.TesteSub.Campo3.value == "" || document.TesteSub.Campo4.value == "") {
+                alert("Erro: Um Campo não foi preenchido.");
+                return false;
             }
-        
-            alert("Sucesso! Tudo Ok....Form Submetido"); 
-            return true; 
+
+            alert("Sucesso! Tudo Ok....Form Submetido");
+            return true;
         } 
-        </script> 
-        
-        <form method="POST" name="TesteSub" onSubmit="return TestaVal()" action="teste.html"> 
-            <p> 
-                Nome: <br>
-                <input type="text" size="20" name="Campo1" value=""> 
-            </p> 
-            <p> 
-                Email: <br>
-                <input type="text" size="20" name="Campo2" value=""> 
-            </p> 
-            <p> 
-                Idade: <br>
-                <input type="text" size="20" name="Campo3" value=""> 
-            </p> 
-            <p> 
-                Cidade: <br>
-                <input type="text" size="20" name="Campo4" value=""> 
-            </p> 
-            <p> 
-                <input type="submit" name="Bsub" value="Manda p/Server"> 
-            </p> 
-        </form>
-    </body>
+    </script>
+
+    <form method="POST" name="TesteSub" onSubmit="return TestaVal()" action="teste.html">
+        <p>
+            Nome: <br>
+            <input type="text" size="20" name="Campo1" value="">
+        </p>
+        <p>
+            Email: <br>
+            <input type="text" size="20" name="Campo2" value="">
+        </p>
+        <p>
+            Idade: <br>
+            <input type="text" size="20" name="Campo3" value="">
+        </p>
+        <p>
+            Cidade: <br>
+            <input type="text" size="20" name="Campo4" value="">
+        </p>
+        <p>
+            <input type="submit" name="Bsub" value="Manda p/Server">
+        </p>
+    </form>
+</body>
+
 </html>
