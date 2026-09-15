@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cerveja Maluca - OPA Bier</title>
+        <link rel="icon" href="icone.ico">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body, h1, h2, h3, h4, h5, h6 { font-family: "Lato", sans-serif }
+            .w3-bar, h1, button { font-family: "Montserrat", sans-serif }
+            .fa-anchor, .fa-coffee { font-size: 200px }
+        </style>
+    </head>
+    <body style="background-color:#F4F1EA">
+        <!-- Navbar -->
+        <section class="w3-top">
+            <div class="w3-bar w3-card w3-left-align w3-large cor-amarelo-ouro">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large cor-amarelo-ouro" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-black">Início</a>
+                <a href="./opaBier.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Opa Bier</a>
+                <a href="./formularioInteresse.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Formulário de Interesse</a>
+            </div>
+            <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-black">
+                <a href="./opaBier.html" class="w3-bar-item w3-button w3-padding-large">Opa Bier</a>
+                <a href="./formularioInteresse.html" class="w3-bar-item w3-button w3-padding-large">Formulário de Interesse</a>
+            </div>
+        </section>
+
+        <header class="w3-container w3-center cor-amarelo-ouro" style="padding:128px 16px">
+            <h1 class="w3-margin w3-jumbo">Opa Bier</h1>
+            <p class="w3-xlarge">Exercício ODAW</p>
+        </header>
+
+        <div class="w3-display-container" style="height: 8vh;">
+            <div class="w3-display-middle" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+                <h2 style="color:#1C1C1E; margin: 0;">Informações super úteis sobre a OPA BIER: </h2>
+                <svg width="100" height="100" viewBox="0 0 24 24" fill="" stroke="currentColor" stroke-width="2">
+                    <path d="M7 8h10v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8z" fill="#E6A100"/>
+                    <path d="M17 10h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2" />
+                    <path d="M6 8h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" fill="#FFFFFF" stroke="#FFFFFF"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="w3-content">
+            <p style="text-align: justify; color:#5A5A5C">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a quae praesentium! Commodi nesciunt cum dolor consequatur, nihil praesentium non dignissimos sint iste? Quo, maiores ut unde a repellat impedit!</p>
+            
+            <!-- BOTÃO E DIV PARA O GERADOR -->
+            <div class="w3-center w3-padding-16">
+                <button onclick="sortearCuriosidade()" class="w3-button w3-black w3-round">Sortear Curiosidade</button>
+                <p id="curiosidade-resultado" style="font-weight: bold; color: #1C1C1E;"></p>
+            </div>
+        </div>
+    
+        <div class="w3-container w3-center w3-padding-32">
+            <img src="cerveja-brasileira-opa-bier-1.png" alt="Cerveja OPA" class="w3-card-4" style="width: 700px; border-radius: 8px;">
+        </div>
+
+        <footer class="w3-container w3-padding-64 w3-center w3-black">
+            <div class="w3-xlarge w3-padding-8">
+                <a href="https://www.instagram.com/vskcaio" class="fa fa-instagram w3-hover-opacity"> Caio Veiga</a><br>
+                <a href="https://www.instagram.com/tiago._moura" class="fa fa-instagram w3-hover-opacity"> Tiago Nogueira</a>
+            </div>
+        </footer>   
+
+        <script>
+            function sortearCuriosidade() {
+                var fatos = [
+                    "A cervejaria foi fundada em Joinville, Santa Catarina.",
+                    "Homenageia os primeiros colonizadores da região.",
+                    "Segue a Lei da Pureza Alemã de 1516 (Reinheitsgebot).",
+                    "Produz estilos tradicionais como Pilsen, Weizen e Pale Ale."
+                ];
+                
+                var indiceAleatorio = Math.floor(Math.random() * fatos.length);
+                var fatoEscolhido = fatos[indiceAleatorio];
+
+                document.getElementById("curiosidade-resultado").innerHTML = "VOCÊ SABIA? " + fatoEscolhido.toUpperCase();
+            }
+
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+    </body>
+</html>
