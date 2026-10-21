@@ -1,0 +1,17 @@
+/*
+Texto Principal: #1C1C1E (Preto suave)
+Texto Secundário / Legendas: #5A5A5C (Cinza grafite)
+Botões e Destaques principais: #E6A100 (Amarelo ouro)
+Bordas e Divisores: #E5E5EA (Cinza bem claro)
+*/
+
+.cor-amarelo-ouro {
+    background-color: #E6A100;
+}
+
+iframe {
+  width: 100%;
+  max-width: 500px; 
+  aspect-ratio: 16 / 9;
+  height: auto;
+}

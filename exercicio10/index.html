@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cerveja Maluca</title>
+    <link rel="icon" href="icone.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Lato", sans-serif }
+        .w3-bar, h1, button { font-family: "Montserrat", sans-serif }
+        .fa-anchor, .fa-coffee { font-size: 200px }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section class="w3-top">
+        <div class="w3-bar w3-card w3-left-align w3-large cor-amarelo-ouro">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large cor-amarelo-ouro"
+                href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-black">Início</a>
+            <a href="./opaBier.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Opa Bier</a>
+            <a href="./formularioInteresse.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cadastro</a>
+            <a href="./login.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login</a>
+        </div>
+
+        <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large w3-black">
+            <a href="./opaBier.html" class="w3-bar-item w3-button w3-padding-large">Opa Bier</a>
+            <a href="./formularioInteresse.php" class="w3-bar-item w3-button w3-padding-large">Cadastro</a>
+            <a href="./login.php" class="w3-bar-item w3-button w3-padding-large">Login</a>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="w3-container w3-center cor-amarelo-ouro" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Cerveja Maluca</h1>
+        <p class="w3-xlarge">Exercício ODAW</p>
+        
+        <p id="data-atual" class="w3-large w3-text-dark-gray" style="font-weight: bold;"></p>
+    </header>
+
+    <div class="w3-display-container" style="height: 10vh;">
+        <div class="w3-display-middle" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <h2 style="color:#1C1C1E; margin: 0;">Informações super úteis sobre cerveja: </h2>
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="" stroke="currentColor" stroke-width="2">
+                <path d="M7 8h10v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8z" fill="#E6A100"/>
+                <path d="M17 10h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2" />
+                <path d="M6 8h12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" fill="#FFFFFF" stroke="#FFFFFF"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-container">
+        <div class="w3-content">
+            <h4 class="w3-padding-32">As cervejas dividem-se principalmente em duas grandes famílias conforme o tipo de fermentação:</h4>
+            <table class="w3-table w3-card">
+                <tr class="cor-amarelo-ouro" style="text-align: center;">
+                    <th>Família Lager</th>
+                    <th>Família Ale</th>
+                </tr>
+                <tr>
+                    <td>Fermentação baixa, com leveduras que trabalham em temperaturas mais baixas (entre 7 e 13°C). O processo de maturação é mais longo, o que resulta em uma bebida mais leve e refrescante.</td>
+                    <td>Fermentação alta, com leveduras que trabalham em temperaturas mais altas (entre 15 e 24°C). O processo de maturação é mais curto, o que resulta em uma bebida mais encorpada e aromática.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="w3-container w3-flex w3-padding-32" style="justify-content:center">
+        <iframe src="https://www.youtube.com/embed/9BnCP8OUpEI?si=dO3zxsalctKv0OZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black">
+        <div class="w3-xlarge w3-padding-8">
+            <a href="https://www.instagram.com/vskcaio" class="fa fa-instagram w3-hover-opacity"> Caio Veiga</a><br>
+            <a href="https://www.instagram.com/tiago._moura" class="fa fa-instagram w3-hover-opacity"> Tiago Nogueira</a>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var data = new Date();
+            var formatacao = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var textoData = data.toLocaleDateString('pt-BR', formatacao);
+            
+            textoData = textoData.charAt(0).toUpperCase() + textoData.slice(1);
+            document.getElementById("data-atual").innerHTML = "Acesso em: " + textoData;
+        };
+
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>
